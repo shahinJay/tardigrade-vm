@@ -1,4 +1,4 @@
-from instruction_set import INSTRUCTIONS, REGISTERS, OPCODE_TO_INSTR
+from instruction_set import OPCODE_TO_INSTR
 from vm_operator import Operator
 from machine_state import state
 

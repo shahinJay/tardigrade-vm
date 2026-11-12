@@ -7,7 +7,7 @@ class Operator:
   def __init__(self):
     pass
 
-  def eval_reg(self, reg): # not perfect for now
+  def eval_reg(self, reg):
     if 0 <= reg <= 2:
       return True
     else:
@@ -83,7 +83,7 @@ class Operator:
     state["running"] = False
     return 0
   
-  def execute_and_advance(self, opcode, operands): #interprets and executes, returns next pc address
+  def execute_and_advance(self, opcode, operands): #executes and returns next [abs] pc address
     operands = [int(op, 2) for op in operands]
 
     match int(opcode, 2):
